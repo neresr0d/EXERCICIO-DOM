@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box /*(*)todo o conteúdo ficará em uma caixa*/
 }
 
 .slideshow-container {
