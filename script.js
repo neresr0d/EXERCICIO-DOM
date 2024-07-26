@@ -34,3 +34,6 @@ function showSlides(n) {
     
     pontos[slideIndex - 1].className += " active";
 }
+
+
+/* O JavaScript atua na escala de transição das imagens, */

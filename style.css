@@ -3,8 +3,8 @@
 }
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
+    max-width: 1000px; /*Largura máxima da imagem exibida será de 1000px*/
+    position: relative; /**/
     margin: auto;
 }
 
@@ -14,16 +14,16 @@
 
 .anterior,
 .proximo {
-    cursor: pointer;
+    cursor: pointer; /*Ao clicar em algum dos botões, próximo a anterior, o cursor será modificado para o pointer*/
     position: absolute;
-    top: 50%;
+    top: 50%; /**/
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: white; /*Aplica a cor branca aos botões de próximo e anterior*/
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.6s ease; /*Altera a escala de transição entre os cliques, deixa mais suave*/
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
@@ -39,9 +39,9 @@
 }
 
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    color: #f2f2f2; /*Insere a cor branca no texto*/
+    font-size: 15px; /*Tamnho da fonte, configurado para o tamanho de 15px*/
+    padding: 8px 12px; /*Espaçamento entre o conteúdo e as bordas de 8px */
     position: absolute;
     bottom: 8px;
     width: 100%;
@@ -49,32 +49,32 @@
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    color: #f2f2f2; /**/
+    font-size: 12px; /**/
+    padding: 8px 12px; /**/
+    position: absolute; /**/
+    top: 0; /**/
 }
 
 .ponto {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    cursor: pointer; /*Ao clicar em algum dos pontos de mudança da imagem, o cursor será modificado para o pointer*/
+    height: 15px; /**/
+    width: 15px; /**/
+    margin: 0 2px; /**/
+    background-color: #bbb; /*Aplica a cor de fundo branca nos pontos de mudança da imagem*/
+    border-radius: 50%; /**/
+    display: inline-block; /**/
+    transition: background-color 0.6s ease; /**/
 }
 
 .active,
 .ponto:hover {
-    background-color: #717171;
+    background-color: #717171; /**/
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
+    animation-name: fade; /**/
+    animation-duration: 2.5s; /**/
 }
 
 @keyframes fade {
