@@ -17,15 +17,15 @@
     cursor: pointer; /*Ao clicar em algum dos botões, próximo e anterior, o cursor será modificado para o pointer*/
     position: absolute; /*Define a posição dos botões anterior e próximo, neste caso, ocuparão apenas o espaÇO da div em que estão inseridos*/
     top: 50%; /*Define que terá margem com relação a parte superior da div de 50px*/
-    width: auto; 
+    width: auto; /*Largura terá valor automático*/
     margin-top: -22px; /*Ajusta a margem superior em -22px*/
     padding: 16px; /*cria um espaço ao redor dos botões de 16px*/
     color: white; /*Aplica a cor branca aos botões de próximo e anterior*/
-    font-weight: bold; 
+    font-weight: bold; /*Adiciona negrito a fonte*/
     font-size: 18px; /*Ajusta o tamanho da fonte para 18px*/
     transition: 0.6s ease; /*Altera a escala de transição entre os cliques, deixa mais suave*/
     border-radius: 0 3px 3px 0; /*Arredonda as bordas: utilizado 0px nas bordas superior e inferior direita e 3px para as bordas superior e inferior esquerda*/
-    user-select: none;
+    user-select: none; /*Impede que o usuário consiga selecionar os botões, como uma seleção de texto */
 }
 
 .proximo {
@@ -42,7 +42,7 @@
     color: #f2f2f2; /*Insere a cor branca no texto, usado o sistema hexadecimal de cores*/
     font-size: 15px; /*Tamnho da fonte, configurado para o tamanho de 15px*/
     padding: 8px 12px; /*Espaçamento entre o conteúdo e as bordas de 8px */
-    position: absolute;
+    position: absolute; /*Aplicado a posição absoluta, ou seja, os textos "Gato, cachorro e pato" será posicionados em relação ao ancestral mais próximo posicionado */
     bottom: 8px; /*Ajusta o tamanho do botão, neste caso fecará com tamanho de 8px*/
     width: 100%; /*Ajusta a largura do texto em 100%*/
     text-align: center; /*Alinha o texto no centro*/
@@ -50,21 +50,21 @@
 
 .numbertext {
     color: #f2f2f2; /*Aplica com aos números, o que os deixará na cor branca*/
-    font-size: 12px; /**/
-    padding: 8px 12px; /**/
-    position: absolute; /**/
-    top: 0; /**/
+    font-size: 12px; /*Adiciona o tamanho da fonte, defidio o tamanho de 12px aos números que aparecem no canto superior esquerdo e indicam as posições dos slides*/
+    padding: 8px 12px; /*Definido que o distanciamento entre o conteudo e as bordas seja de 8px na parte de cima e na parte de baixo e 12px na esquerda e na direita*/
+    position: absolute; /*Aplicado a posição absoluta na div que contém os números dos slides, ou seja, os textos "1/3,2/3 e 3/3" serão posicionados em relação ao ancestral mais próximo posicionado*/
+    top: 0; /*Define que não terá margem na parte de cima*/
 }
 
 .ponto {
     cursor: pointer; /*Ao clicar em algum dos pontos de mudança da imagem, o cursor será modificado para o pointer*/
-    height: 15px; /**/
-    width: 15px; /**/
+    height: 15px; /*Define que a altura dos pontos será de 15px*/
+    width: 15px; /*Define que a largura dos pontos será de 15px*/
     margin: 0 2px; /*Será aplicada margem de 0px nas pastes superior e inferior e 2px na esquerda e direita dos 3 pontos que aparecem abaixo das imagens*/
     background-color: #bbb; /*Aplica a cor de fundo branca nos pontos de mudança da imagem*/
     border-radius: 50%; /*Arredonda as bordas, neste caso, arrendondamento em 50%*/
-    display: inline-block; /**/
-    transition: background-color 0.6s ease; /**/
+    display: inline-block; /*Os pontos são exibidos um ao lado do outro em forma de linha*/
+    transition: background-color 0.6s ease; /*A transição da cor de fundo é feita em 0.6s e de forma suave*/
 }
 
 .active,
