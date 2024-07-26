@@ -1,55 +1,55 @@
 * {
-    box-sizing: border-box /*(*)todo o conteúdo ficará em uma caixa*/
+    box-sizing: border-box /*(*)todo o conteúdo será contido em um modelo de caixa*/
 }
 
 .slideshow-container {
     max-width: 1000px; /*Largura máxima da imagem exibida será de 1000px*/
-    position: relative; /**/
-    margin: auto;
+    position: relative; /*Define a posição relativa do container de ítens, permanecerá na posição inicial*/
+    margin: auto; /*Margens automáticas serão aplicadas ao container de itens*/
 }
 
 .mySlides {
-    display: none;
+    display: none; /*Define que o sistema de layout baseado em grade não será aplicado*/
 }
 
 .anterior,
 .proximo {
-    cursor: pointer; /*Ao clicar em algum dos botões, próximo a anterior, o cursor será modificado para o pointer*/
-    position: absolute;
-    top: 50%; /**/
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    cursor: pointer; /*Ao clicar em algum dos botões, próximo e anterior, o cursor será modificado para o pointer*/
+    position: absolute; /*Define a posição dos botões anterior e próximo, neste caso, ocuparão apenas o espaÇO da div em que estão inseridos*/
+    top: 50%; /*Define que terá margem com relação a parte superior da div de 50px*/
+    width: auto; 
+    margin-top: -22px; /*Ajusta a margem superior em -22px*/
+    padding: 16px; /*cria um espaço ao redor dos botões de 16px*/
     color: white; /*Aplica a cor branca aos botões de próximo e anterior*/
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: bold; 
+    font-size: 18px; /*Ajusta o tamanho da fonte para 18px*/
     transition: 0.6s ease; /*Altera a escala de transição entre os cliques, deixa mais suave*/
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0; /*Arredonda as bordas: utilizado 0px nas bordas superior e inferior direita e 3px para as bordas superior e inferior esquerda*/
     user-select: none;
 }
 
 .proximo {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 0; /*Insere margem de 0px a direita, ou seja, o elemento ficará colado no lateral da div*/
+    border-radius: 3px 0 0 3px; /*Responsável por arredondar as bordas: utilizado 0px nas bordas superior e inferior direita e 3px para as bordas superior e inferior esquerda*/
 }
 
 .anterior:hover,
 .proximo:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /*Insere a cor branca no , usado o sistema de cores rgba(red, green, blue, alpha). O apha serve para ditar a transparência e opacidade.*/
 }
 
 .text {
-    color: #f2f2f2; /*Insere a cor branca no texto*/
+    color: #f2f2f2; /*Insere a cor branca no texto, usado o sistema hexadecimal de cores*/
     font-size: 15px; /*Tamnho da fonte, configurado para o tamanho de 15px*/
     padding: 8px 12px; /*Espaçamento entre o conteúdo e as bordas de 8px */
     position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    bottom: 8px; /*Ajusta o tamanho do botão, neste caso fecará com tamanho de 8px*/
+    width: 100%; /*Ajusta a largura do texto em 100%*/
+    text-align: center; /*Alinha o texto no centro*/
 }
 
 .numbertext {
-    color: #f2f2f2; /**/
+    color: #f2f2f2; /*Aplica com aos números, o que os deixará na cor branca*/
     font-size: 12px; /**/
     padding: 8px 12px; /**/
     position: absolute; /**/
@@ -60,16 +60,16 @@
     cursor: pointer; /*Ao clicar em algum dos pontos de mudança da imagem, o cursor será modificado para o pointer*/
     height: 15px; /**/
     width: 15px; /**/
-    margin: 0 2px; /**/
+    margin: 0 2px; /*Será aplicada margem de 0px nas pastes superior e inferior e 2px na esquerda e direita dos 3 pontos que aparecem abaixo das imagens*/
     background-color: #bbb; /*Aplica a cor de fundo branca nos pontos de mudança da imagem*/
-    border-radius: 50%; /**/
+    border-radius: 50%; /*Arredonda as bordas, neste caso, arrendondamento em 50%*/
     display: inline-block; /**/
     transition: background-color 0.6s ease; /**/
 }
 
 .active,
-.ponto:hover {
-    background-color: #717171; /**/
+.ponto:hover { /*Criado uma pseudo-classe para os pontos*/
+    background-color: #717171; /*Utilizando o sistema hexadecimal de cores, define uma cor acizentada para os botões*/
 }
 
 .fade {
