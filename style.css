@@ -73,16 +73,16 @@
 }
 
 .fade {
-    animation-name: fade; /**/
-    animation-duration: 2.5s; /**/
+    animation-name: fade; /*Animação ocorre após o carregamento da página*/
+    animation-duration: 2.5s; /*Inimação terá duração de 2.55*/
 }
 
-@keyframes fade {
+@keyframes fade { /*Tag para animações*/
     from {
-        opacity: .2
+        opacity: .2 /*Opacidade partirá de 2*/
     }
 
     to {
-        opacity: 1
+        opacity: 1 /*Opacidade ficará com valor de 1*/
     }
 }

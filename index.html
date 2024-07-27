@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en"> <!--Voltado ao idioma da página-->
+<html lang="en">
 
-<head> <!--Área para inserção de metadados, dados que não ficarão visíveis para o usuário, mas que podem ser visualizados pelo console-->
-    <meta charset="UTF-8"> <!--Sistema de código mais atual, utilizado no html5, abrange praticamente todos os caracteres existentes-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsável por adequar o conteúdo em telas de smartphones, tablets, etc.-->
-    <title>Document</title> <!--Título que aparece na parte de cima do navegador, para identificar a página-->
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
 
-    <link rel="stylesheet" href="style.css"> <!--Link responsável por invocar a página de CSS para estilização-->
-    <script src="script.js" defer></script> <!--Link responsável por invocar a página de JavaScript para lançar lógica de programação no site-->
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
 
 </head>
 
-<body> <!--Parte que ficará visível para o usuário, corpo do html e serão lançados os conteúdos que o usuário verá-->
+<body> 
+    <div class="slideshow-container"> 
 
-    <div class="slideshow-container"> <!--Divisão com classe identificadora de nome "slideshow-container", que será chamada no CSS e esta abrange o container com todas a imagens a serem exbidas-->
-
-        <div class="mySlides fade"> <!--Divisão com classe identificadora de nome "mySlides fade", que será chamado no CSS-->
-            <div class="numbertext">1 / 3</div> <!--Divisão com classe identificadora de nome "numbertext", que contém o número referente a posição da imagem exibida na tela, que será chamado no CSS-->
-            <img src="/Gato3.jfif" style="width:100%"> <!--Divisão com tag de imagem, que insere uma imagem na tela, e style com largura de 100%-->
-            <div class="text">Gato</div> <!--Divisão com classe identificadora de nome "text", nome do animal que está sendo exibio na tela-->
+        <div class="mySlides fade"> 
+            <div class="numbertext">1 / 3</div> 
+            <img src="/Gato3.jfif" style="width:100%"> 
+            <div class="text">Gato</div> 
         </div>
 
-        <div class="mySlides fade"> <!--Divisão com classe identificadora de nome "mySlides fade"-->
-            <div class="numbertext">2 / 3</div> <!--Divisão com classe identificadora de nome "numbertext", que contém o número referente a posição da imagem exibida na tela-->
-            <img src="/cachorro.jfif" style="width:100%"> <!--Divisão com tag de imagem, que insere uma imagem na tela, e style com largura de 100%-->
-            <div class="text">Cachorro</div> <!--Divisão com classe identificadora de nome "text", nome do animal que está sendo exibio na tela-->
+        <div class="mySlides fade"> 
+            <div class="numbertext">2 / 3</div> 
+            <img src="/cachorro.jfif" style="width:100%"> 
+            <div class="text">Cachorro</div> 
         </div>
 
-        <div class="mySlides fade"> <!--Divisão com classe identificadora de nome "mySlides fade"-->
-            <div class="numbertext">3 / 3</div> <!--Divisão com classe identificadora de nome "numbertext", que contém o número referente a posição da imagem exibida na tela-->
-            <img src="/pato.jfif" style="width:100%"> <!--Divisão com tag de imagem, que insere uma imagem na tela, e style com largura de 100%-->
-            <div class="text">Pato</div> <!--Divisão com classe identificadora de nome "text", nome do animal que está sendo exibio na tela-->
+        <div class="mySlides fade"> 
+            <div class="numbertext">3 / 3</div> 
+            <img src="/pato.jfif" style="width:100%"> 
+            <div class="text">Pato</div> 
         </div>
 
         <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
         <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br> <!--Quebra de linha-->
+    <br> 
 
     <div style="text-align:center">
         <span class="ponto" onclick="currentSlide(1)"></span>
